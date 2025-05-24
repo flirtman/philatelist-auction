@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import { FaRegHeart } from "react-icons/fa";
 import "./styles.scss";
 
@@ -8,6 +8,11 @@ import Img3 from "../../media/stamps/The_Soviet_Union_1965_CPA_3264_stamp_(Histo
 
 import productsData from "./products.json";
 
+// Icons
+import { RiGalleryView } from "react-icons/ri";
+import { RiListView } from "react-icons/ri";
+
+
 const imageMap = {
     img1: Img1,
     img2: Img2,
@@ -15,28 +20,42 @@ const imageMap = {
 };
 
 const ProductsList = () => {
+    const [displayAs, setDisplayAs] = useState('gallery');
+
     return (
-        <div className="products-list">
-            {productsData.map((product) => (
-                <div className="card" key={product.id}>
-                    <div className="img-holder">
-                        <button><FaRegHeart/></button>
-                        <img src={imageMap[product.image as keyof typeof  imageMap]} alt={product.title}/>
-                    </div>
-                    <div className="time-left">
-                        {product.timeLeft}
-                    </div>
-                    <h3>{product.title}</h3>
-
-
-                    <div className="current-bid">
-                        <hr/>
-                        <small>Current Bid</small>
-                        ${product.currentBid.toFixed(2)}
-                    </div>
+        <>
+            <div className={'filter-bar'}>
+                <div>830 Listings Found. Showing 1 to 48.</div>
+                <div className={'spacer'}></div>
+                <div className={'controllers'}>
+                    <button onClick={() => setDisplayAs('gallery')}><RiGalleryView/></button>
+                    <button onClick={() => setDisplayAs('list')}><RiListView/></button>
                 </div>
-            ))}
-        </div>
+            </div>
+            <div className="products-list" data-display={displayAs}>
+                {productsData.map((product) => (
+                    <div className="card" key={product.id}>
+                        <div className="img-holder">
+                            <button><FaRegHeart/></button>
+                            <img src={imageMap[product.image as keyof typeof imageMap]} alt={product.title}/>
+                        </div>
+                        <div>
+                            <div className="time-left">
+                                {product.timeLeft}
+                            </div>
+                            <h3>{product.title}</h3>
+                        </div>
+
+
+                        <div className="current-bid">
+                            <hr/>
+                            <small>Current Bid</small>
+                            ${product.currentBid.toFixed(2)}
+                        </div>
+                    </div>
+                ))}
+            </div>
+        </>
     );
 };
 
