@@ -1,0 +1,142 @@
+[
+  {
+    "id": 1,
+    "title": "Apollo 11 Moon Landing, 1969",
+    "image": "img1",
+    "currentBid": 3.0,
+    "timeLeft": "Ends in 2h 0m 30s"
+  },
+  {
+    "id": 2,
+    "title": "Vintage Lenin Portrait, 1970",
+    "image": "img2",
+    "currentBid": 4.0,
+    "timeLeft": "Ends in 3h 15m 31s"
+  },
+  {
+    "id": 3,
+    "title": "Soviet Rocket Launch, 1967",
+    "image": "img3",
+    "currentBid": 5.0,
+    "timeLeft": "Ends in 4h 30m 32s"
+  },
+  {
+    "id": 4,
+    "title": "Red Square Winter Scene, 1955",
+    "image": "img1",
+    "currentBid": 6.0,
+    "timeLeft": "Ends in 5h 45m 33s"
+  },
+  {
+    "id": 5,
+    "title": "Postal Worker Tribute, 1981",
+    "image": "img2",
+    "currentBid": 7.0,
+    "timeLeft": "Ends in 6h 0m 34s"
+  },
+  {
+    "id": 6,
+    "title": "Ural Mountains Landscape, 1963",
+    "image": "img3",
+    "currentBid": 8.0,
+    "timeLeft": "Ends in 2h 15m 35s"
+  },
+  {
+    "id": 7,
+    "title": "Historic Kremlin Stamp, 1950",
+    "image": "img1",
+    "currentBid": 9.0,
+    "timeLeft": "Ends in 3h 30m 36s"
+  },
+  {
+    "id": 8,
+    "title": "Moscow Metro Commemoration, 1980",
+    "image": "img2",
+    "currentBid": 10.0,
+    "timeLeft": "Ends in 4h 45m 37s"
+  },
+  {
+    "id": 9,
+    "title": "Cosmonaut Yuri Gagarin, 1961",
+    "image": "img3",
+    "currentBid": 11.0,
+    "timeLeft": "Ends in 5h 0m 38s"
+  },
+  {
+    "id": 10,
+    "title": "Siberian Tiger Wildlife Series, 1972",
+    "image": "img1",
+    "currentBid": 12.0,
+    "timeLeft": "Ends in 6h 15m 39s"
+  },
+  {
+    "id": 11,
+    "title": "Trans-Siberian Railway, 1975",
+    "image": "img2",
+    "currentBid": 13.0,
+    "timeLeft": "Ends in 2h 30m 40s"
+  },
+  {
+    "id": 12,
+    "title": "Soviet-Afghan Solidarity, 1984",
+    "image": "img3",
+    "currentBid": 14.0,
+    "timeLeft": "Ends in 3h 45m 41s"
+  },
+  {
+    "id": 13,
+    "title": "Sputnik 1 Space Mission, 1957",
+    "image": "img1",
+    "currentBid": 15.0,
+    "timeLeft": "Ends in 4h 0m 42s"
+  },
+  {
+    "id": 14,
+    "title": "May Day Parade, 1966",
+    "image": "img2",
+    "currentBid": 16.0,
+    "timeLeft": "Ends in 5h 15m 43s"
+  },
+  {
+    "id": 15,
+    "title": "Lenin Centenary, 1970",
+    "image": "img3",
+    "currentBid": 17.0,
+    "timeLeft": "Ends in 6h 30m 44s"
+  },
+  {
+    "id": 16,
+    "title": "Cultural Heritage Series \u2013 Ballet, 1982",
+    "image": "img1",
+    "currentBid": 18.0,
+    "timeLeft": "Ends in 2h 45m 45s"
+  },
+  {
+    "id": 17,
+    "title": "Victory Day WWII, 1945-1975",
+    "image": "img2",
+    "currentBid": 19.0,
+    "timeLeft": "Ends in 3h 0m 46s"
+  },
+  {
+    "id": 18,
+    "title": "Soviet Postal History \u2013 Jetliner, 1968",
+    "image": "img3",
+    "currentBid": 20.0,
+    "timeLeft": "Ends in 4h 15m 47s"
+  },
+  {
+    "id": 19,
+    "title": "Peace & Progress Emblem, 1980",
+    "image": "img1",
+    "currentBid": 21.0,
+    "timeLeft": "Ends in 5h 30m 48s"
+  },
+  {
+    "id": 20,
+    "title": "National Art Museum Issue, 1969",
+    "image": "img2",
+    "currentBid": 22.0,
+    "timeLeft": "Ends in 6h 45m 49s"
+  }
+]

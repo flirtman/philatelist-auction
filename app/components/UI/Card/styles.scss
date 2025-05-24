@@ -1,0 +1,92 @@
+.card {
+  border: 1px solid #dfdfdf;
+  border-radius: 8px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0 2px 8px 0;
+  background-color: white;
+
+  .card-header {
+    display: flex;
+    font-family: var(--font-baskervville);
+    font-size: 1.2rem;
+    font-weight: 600;
+    gap: 8px;
+    align-items: center;
+    padding: 22px 22px 16px 22px;
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    border-radius: 8px 8px 0 0;
+
+    .spacer {
+      margin-left: auto;
+    }
+
+    &.pointer {
+      cursor: pointer;
+    }
+  }
+
+  .card-body {
+    padding: 16px 22px 22px 22px;
+
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        margin-bottom: 0.5rem;
+        width: fit-content;
+
+        a {
+          text-decoration: none;
+          color: black;
+          font-size: 0.9rem;
+          display: flex;
+          align-items: center;
+          gap: 6px;
+          border-bottom: 1px solid transparent;
+
+          svg {
+            display: none;
+          }
+
+          &:hover, &.active {
+            border-bottom: 1px solid var(--color-secondary);
+
+            svg {
+              display: inline-block;
+              color: var(--color-secondary);
+            }
+          }
+        }
+      }
+    }
+
+    label {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      font-size: 0.9rem;
+      cursor: pointer;
+      margin-bottom: 6px;
+
+      small {
+        margin-left: auto;
+      }
+
+      input[type="checkbox"] {
+        accent-color: var(--color-secondary);
+      }
+
+      input[type="radio"] {
+        accent-color: var(--color-secondary);
+      }
+
+      &:hover {
+        color: var(--color-secondary);
+        text-shadow: 0 0 0 rgba(0, 0, 0, 0.6);
+      }
+    }
+  }
+}

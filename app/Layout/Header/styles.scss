@@ -1,0 +1,81 @@
+.top-bar {
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+
+  .spacer {
+    margin-left: auto;
+  }
+
+  .account-actions {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+
+    svg {
+      font-size: 1.5rem;
+    }
+
+    a {
+      color: var(--color-secondary);
+      text-decoration: none;
+    }
+  }
+
+  .search-wrapper {
+    display: flex;
+    align-items: stretch;
+    height: 40px;
+    min-width: 50%;
+
+    input,
+    button {
+      box-sizing: border-box;
+      height: 100%;
+      border: 1px solid var(--color-secondary);
+      padding: 0 16px;
+      font-size: 16px;
+      background-color: var(--color-primary);
+      color: var(--color-secondary);
+    }
+
+    input {
+      border-radius: 6px 0 0 6px;
+      width: calc(100% - 50px);
+
+      &::placeholder {
+        color: var(--color-secondary);
+        opacity: 0.8;
+      }
+    }
+
+    button {
+      border-radius: 0 6px 6px 0;
+      border-left: none;
+      cursor: pointer;
+
+      &:hover {
+        background-color: var(--color-secondary);
+        color: var(--color-primary);
+      }
+    }
+  }
+
+  .logo {
+    font-family: var(--font-baskervville);
+    color: var(--color-secondary);
+    font-size: 2rem;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    font-weight: 600;
+
+    img {
+      max-width: 60px;
+    }
+  }
+}

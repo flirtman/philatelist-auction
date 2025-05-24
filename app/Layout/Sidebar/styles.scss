@@ -1,0 +1,36 @@
+.settings-icon {
+  position: absolute;
+  left: 386px;
+  font-size: 1.5rem;
+  margin: 4px;
+  cursor: pointer;
+
+  &:hover {
+    color: var(--color-secondary);
+  }
+
+  &[data-open="false"] {
+    left: 30px;
+  }
+}
+.sidebar {
+  width: 350px;
+  background-color: #f4f4f4;
+  padding: 1rem;
+  overflow-y: scroll;
+  max-height: calc(100vh - 70px);
+  scrollbar-color: transparent transparent;
+  scrollbar-width: thin;
+
+
+
+  &[data-open="false"] {
+    margin-left: -356px;
+  }
+  &[data-open="true"] {
+    &:hover {
+      scrollbar-color: var(--color-secondary) transparent;
+    }
+  }
+
+}

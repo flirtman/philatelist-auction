@@ -1,0 +1,31 @@
+.collection-filters {
+  h2 {
+    font-family: var(--font-baskervville);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    text-align: center;
+    margin-bottom: 16px;
+  }
+
+  [data-show] {
+    overflow: hidden;
+    transition: all 0.3s ease;
+    max-height: 0;
+    opacity: 0;
+    transform: translateY(20px);
+    pointer-events: none;
+  }
+
+  [data-show="true"] {
+    max-height: 2000px;
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
+
+  small {
+    color: #7b7b7b;
+  }
+}
