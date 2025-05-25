@@ -11,14 +11,19 @@ const Header = () => {
         <header className="top-bar">
             <div className={'logo'}><img src={Img1} alt=""/> Stampee's Auction</div>
             <div className={'search-wrapper'}>
-                <input type="text" placeholder={"Search stamp listings..."}/>
-                <button><IoSearch/></button>
+                <input
+                    id="search-field"
+                    placeholder="Search stamp listings..."
+                    type="text"
+                    aria-label="Search stamp listings"
+                />
+                <button aria-label="Search"><IoSearch/></button>
             </div>
             <div className={'account-actions'}>
                 <a href="">Sign In</a>
                 <a href="">Sign Up</a>
                 <a href="">Wish List</a>
-                <a href=""><IoCartOutline/></a>
+                <a href="" aria-label="View cart"><IoCartOutline/></a>
             </div>
         </header>
     )
