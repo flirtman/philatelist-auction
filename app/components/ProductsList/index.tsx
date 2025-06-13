@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import { useNavigate } from "react-router-dom";
 import { FaRegHeart } from "react-icons/fa";
 import "./styles.scss";
 
@@ -21,6 +22,7 @@ const imageMap = {
 
 const ProductsList = () => {
     const [displayAs, setDisplayAs] = useState('gallery');
+    const navigate = useNavigate();
 
     return (
         <>
@@ -34,7 +36,7 @@ const ProductsList = () => {
             </div>
             <div className="products-list" data-display={displayAs}>
                 {productsData.map((product) => (
-                    <div className="card" key={product.id}>
+                    <div className="card" key={product.id} onClick={() => navigate('/product')}>
                         <div className="img-holder">
                             <button aria-label="Add to favorites"><FaRegHeart/></button>
                             <img src={imageMap[product.image as keyof typeof imageMap]} alt={product.title}/>

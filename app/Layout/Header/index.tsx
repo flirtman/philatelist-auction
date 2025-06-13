@@ -1,3 +1,5 @@
+import { useNavigate } from "react-router-dom";
+
 // Icons
 import { IoSearch, IoCartOutline } from "react-icons/io5";
 
@@ -7,9 +9,12 @@ import Img1 from "../../media/lord-stempee-1.png";
 import "./styles.scss";
 
 const Header = () => {
+    const navigate = useNavigate();
     return (
         <header className="top-bar">
-            <div className={'logo'}><img src={Img1} alt=""/> Stampee's Auction</div>
+            <div className={'logo'} onClick={() => navigate('/')}>
+                <img src={Img1} alt=""/> Stampee's Auction
+            </div>
             <div className={'search-wrapper'}>
                 <input
                     id="search-field"

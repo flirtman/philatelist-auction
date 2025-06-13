@@ -1,5 +1,6 @@
 import App from "./root";
-import Home from "./routes/home"; // create this if it doesn’t exist
+import Home from "./routes/home";
+import Product from "./routes/product";
 
 const routes = [
     {
@@ -9,6 +10,10 @@ const routes = [
             {
                 path: "",
                 element: <Home />,
+            },
+            {
+                path: "/product",
+                element: <Product />,
             },
         ],
     },

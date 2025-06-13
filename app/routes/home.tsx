@@ -3,8 +3,8 @@ import HomePage from "../pages/Home/index.jsx";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "Great! React Router App" },
-    { name: "description", content: "Welcome to React Router!" },
+    { title: "Stampee's Auction" },
+    { name: "description", content: "Welcome to Stampee's Auction!" },
   ];
 }
 
