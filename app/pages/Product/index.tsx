@@ -71,6 +71,7 @@ const Product = () => {
                                             <div className="bidings">
                                                 <label>
                                                     <b>Place Bid</b>
+                                                    <br/>
                                                     <input type="number" placeholder="USD"/>
                                                 </label>
                                                 <p><small>Minimum Bid: $0.99</small></p>
