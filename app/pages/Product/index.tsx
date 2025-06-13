@@ -13,7 +13,7 @@ const MoreItemsCard = ({img, desc, price}: { img: string; desc: string; price: n
     return (
         <div className={'more-items-card'}>
             <div className="header">
-                <img src={img} alt=""/>
+                <img src={img} alt={desc +  ' ' + Math.random()}/>
             </div>
             <div className="body">
                 <div className="desc">{desc}</div>
@@ -37,27 +37,27 @@ const Product = () => {
                     <div className={'col-4'}>
                         <div className="prod-img-container">
                             <div className="main-img-container">
-                                <img src={Img1} alt=""/>
+                                <img src={Img1} alt={'main image' + ' ' + Math.random()}/>
                             </div>
                             <ul className="thumbs-container">
                                 <li>
-                                    <img className={'thumb'} src={Img1} alt=""/>
+                                    <img className={'thumb'} src={Img1} alt="thumb 1"/>
                                 </li>
                                 <li>
-                                <img className={'thumb'} src={Img2} alt=""/>
+                                <img className={'thumb'} src={Img2} alt="thumb 2"/>
                                 </li>
                                 <li>
-                                    <img className={'thumb'} src={Img3} alt=""/>
+                                    <img className={'thumb'} src={Img3} alt="thumb 3"/>
                                 </li>
                             </ul>
                         </div>
                     </div>
                     <div className={'col-8'}>
                         <div className="product-details">
-                            <h2>Product name</h2>
+                            <h1>Product name</h1>
                             <div className="row">
                                 <div className="col-6">
-                                    <h3>$0.99</h3>
+                                    <h2>$0.99</h2>
                                     <ul>
                                         <li>Seller: mushbigdog (1426)</li>
                                         <li>Time Left: <span> Closed</span></li>
@@ -68,9 +68,11 @@ const Product = () => {
                                 <div className="col-6">
                                     <div className="row extra-info">
                                         <div className="col-8">
-                                            <div className={'bidings'}>
-                                                <p><b>Place Bid</b></p>
-                                                <input type="number" placeholder={'USD'}/>
+                                            <div className="bidings">
+                                                <label>
+                                                    <b>Place Bid</b>
+                                                    <input type="number" placeholder="USD"/>
+                                                </label>
                                                 <p><small>Minimum Bid: $0.99</small></p>
                                             </div>
                                             <button>PLACE BID</button>

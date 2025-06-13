@@ -14,6 +14,10 @@ body {
   }
 }
 
+img {
+  max-width: 100%;
+}
+
 /** Colors **/
 :root {
   --color-primary: #26303f;
