@@ -30,15 +30,17 @@ const ProductsList = () => {
                 <div>830 Listings Found. Showing 1 to 48.</div>
                 <div className={'spacer'}></div>
                 <div className={'controllers'}>
-                    <button onClick={() => setDisplayAs('gallery')} aria-label="Gallery view"><RiGalleryView/></button>
-                    <button onClick={() => setDisplayAs('list')} aria-label="List view"><RiListView/></button>
+                    <button type={'button'} onClick={() => setDisplayAs('gallery')} aria-label="Gallery view"><RiGalleryView/></button>
+                    <button type={'button'} onClick={() => setDisplayAs('list')} aria-label="List view"><RiListView/></button>
                 </div>
             </div>
             <div className="products-list" data-display={displayAs}>
                 {productsData.map((product) => (
                     <div className="card" key={product.id} onClick={() => navigate('/product')}>
                         <div className="img-holder">
-                            <button aria-label="Add to favorites"><FaRegHeart/></button>
+                            <button type={'button'} aria-label={`Add ${product.title} to favorites`}>
+                                <FaRegHeart/>
+                            </button>
                             <img src={imageMap[product.image as keyof typeof imageMap]} alt={product.title}/>
                         </div>
                         <div>
