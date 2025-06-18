@@ -34,7 +34,7 @@ const Product = () => {
                     </ul>
                 </div>
                 <div className={'row'}>
-                    <div className={'col-4'}>
+                    <div className={'col-sm-12 col-4'}>
                         <div className="prod-img-container">
                             <div className="main-img-container">
                                 <img src={Img1} alt={'main image' + ' ' + Math.random()}/>
@@ -52,11 +52,11 @@ const Product = () => {
                             </ul>
                         </div>
                     </div>
-                    <div className={'col-8'}>
+                    <div className={'col-sm-12 col-8'}>
                         <div className="product-details">
                             <h1>Product name</h1>
                             <div className="row">
-                                <div className="col-6">
+                                <div className="col-sm-12 col-6">
                                     <h2>$0.99</h2>
                                     <ul>
                                         <li>Seller: mushbigdog (1426)</li>
@@ -65,7 +65,7 @@ const Product = () => {
                                     <br/>
                                     <img src={graphic1} alt=""/>
                                 </div>
-                                <div className="col-6">
+                                <div className="col-sm-12 col-6">
                                     <div className="row extra-info">
                                         <div className="col-8">
                                             <div className="bidings">
@@ -91,22 +91,22 @@ const Product = () => {
                                 <h3>More Items from Wolfhound Stamps</h3>
 
                                 <div className="row">
-                                    <div className="col-3">
+                                    <div className="col-sm-12 col-3">
                                         <MoreItemsCard img={Img1} desc={"lorem ipsum sit amit"} price={15.55}/>
                                     </div>
-                                    <div className="col-3">
+                                    <div className="col-sm-12 col-3">
                                         <MoreItemsCard img={Img2} desc={"lorem ipsum sit amit"} price={15.55}/>
                                     </div>
-                                    <div className="col-3">
+                                    <div className="col-sm-12 col-3">
                                         <MoreItemsCard img={Img3} desc={"lorem ipsum sit amit"} price={15.55}/>
                                     </div>
-                                    <div className="col-3">
+                                    <div className="col-sm-12 col-3">
                                         <MoreItemsCard img={Img1} desc={"lorem ipsum sit amit"} price={15.55}/>
                                     </div>
-                                    <div className="col-3">
+                                    <div className="col-sm-12 col-3">
                                         <MoreItemsCard img={Img2} desc={"lorem ipsum sit amit"} price={15.55}/>
                                     </div>
-                                    <div className="col-3">
+                                    <div className="col-sm-12 col-3">
                                         <MoreItemsCard img={Img3} desc={"lorem ipsum sit amit"} price={15.55}/>
                                     </div>
                                 </div>

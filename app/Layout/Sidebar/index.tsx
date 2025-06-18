@@ -1,4 +1,4 @@
-import {useState} from "react";
+import {useState, useEffect} from "react";
 
 // components
 import CollectionFilters from "../../components/CollectionFilters";
@@ -12,7 +12,24 @@ import { LuPanelRightClose } from "react-icons/lu";
 import "./styles.scss";
 
 const Sidebar = () => {
-    const [open, setOpen] = useState(true)
+    const [open, setOpen] = useState(false)
+
+    useEffect(() => {
+        const handleResize = () => {
+            if (window.innerWidth > 1500) {
+                setOpen(true);
+            } else {
+                setOpen(false);
+            }
+        };
+
+        handleResize()
+        // Optional: Only update on resize if you want it to be dynamic
+        window.addEventListener("resize", handleResize);
+
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
+
     return (
         <>
             <div className={'settings-icon'} data-open={open} onClick={() => setOpen(!open)}>
